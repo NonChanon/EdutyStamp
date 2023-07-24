@@ -1,14 +1,15 @@
 import { forwardRef } from "react";
 import { VariantProps, cva } from "class-variance-authority";
 import { merge } from "../utils";
-const buttonVariants = cva("rounded-lg border-[2px] text-primary font-bold", {
+const buttonVariants = cva("rounded-lg border-[1.5px] border-primary", {
   variants: {
     variant: {
-      default: "bg-primary text-white border-primary",
-      white: "bg-white text-primary border-primary",
+      default: "bg-primary text-white",
+      white: "bg-white text-primary",
+      none: "border-none",
     },
     size: {
-      default: "w-[130px] h-[40px]",
+      default: "w-[110px] h-[40px]",
     },
   },
   defaultVariants: {
