@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import Home from "./pages/Home";
+import DataResult from "./pages/DataResult";
 import Login from "./pages/Login";
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<DataResult />} />
       </Routes>
     </>
   );
