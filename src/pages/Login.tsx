@@ -31,42 +31,26 @@ const Login = () => {
     }
   };
   let template = {
-    title: "Login",
+    title: "Log In",
     fields: [
       {
         title: "Username",
         type: "text",
         name: "username",
       },
+      {
+        title: "Password",
+        type: "password",
+        name: "password",
+      },
+    ],
+    button: [
+      {
+        name: "Register",
+      },
     ],
   };
-  return (
-    // <div classNameName="">
-    //   <div classNameName="">
-    //     <form classNameName=" w-40 flex flex-col" onSubmit={handleSubmit}>
-    //       <Input
-    //         title="Username"
-    //         placeholder="Username"
-    //         value={form.username}
-    //         onChange={handleChange}
-    //         required
-    //       />
-    //       <input
-    //         required
-    //         name="password"
-    //         type="password"
-    //         placeholder="Password"
-    //         value={form.password}
-    //         onChange={handleChange}
-    //       />
-    //       <button id="submit" type="submit">
-    //         login
-    //       </button>
-    //     </form>
-    //   </div>
-    // </div>
-    <Form template={template} />
-  );
+  return <Form template={template} />;
 };
 
 export default Login;
